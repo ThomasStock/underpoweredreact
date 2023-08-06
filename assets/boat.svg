@@ -1,0 +1,25 @@
+<svg
+	width="172px"
+	height="347px"
+	viewBox="0 0 172 347"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path
+			d="M86,11 C127.421356,11 161,44.5786438 161,86 L161,336 L11,336 L11,86 L11.0100479,84.7597379 C11.6723571,43.9104288 44.9928573,11 86,11 Z"
+			id="Boat"
+			fill="#FF5757"
+			fill-rule="nonzero"
+		></path>
+		<circle id="bottomRight" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="161" cy="336" r="10.5"></circle>
+		<circle id="bottomLeft" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="11" cy="336" r="10.5"></circle>
+		<circle id="topLeft" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="11" cy="86" r="10.5"></circle>
+		<circle id="top" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="86" cy="11" r="10.5"></circle>
+		<circle id="bottom" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="86" cy="336" r="10.5"></circle>
+		<circle id="topRight" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="161" cy="86" r="10.5"></circle>
+		<circle id="right" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="161" cy="174" r="10.5"></circle>
+		<circle id="left" stroke="#979797" fill-opacity="0.74" fill="#D8D8D8" cx="11" cy="174" r="10.5"></circle>
+	</g>
+</svg>

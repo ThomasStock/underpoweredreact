@@ -1,0 +1,28 @@
+<svg
+	width="70px"
+	height="156px"
+	viewBox="0 0 70 156"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+	<defs>
+		<rect id="path-ykr79j9cvq-1" x="25" y="40" width="20" height="80" rx="8"></rect>
+	</defs>
+	<g id="tug" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g>
+			<rect id="engineUneven1" stroke="#8A7575" stroke-width="4" fill="#323232" x="30" y="132" width="10" height="22" rx="5"></rect>
+			<rect id="engineUneven2" stroke="#8A7575" stroke-width="4" fill="#323232" x="16" y="132" width="10" height="22" rx="5"></rect>
+			<rect id="engineUneven5" stroke="#8A7575" stroke-width="4" fill="#323232" x="2" y="132" width="10" height="22" rx="5"></rect>
+			<rect id="engineUneven3" stroke="#8A7575" stroke-width="4" fill="#323232" x="44" y="132" width="10" height="22" rx="5"></rect>
+			<rect id="engineUneven4" stroke="#8A7575" stroke-width="4" fill="#323232" x="58" y="132" width="10" height="22" rx="5"></rect>
+			<circle id="Oval" stroke="#979797" fill="#82A5FD" cx="35" cy="30" r="29.5"></circle>
+			<rect id="body" fill="#7072D5" x="5" y="30" width="60" height="100"></rect>
+			<mask id="mask-ykr79j9cvq-2" fill="white">
+				<use xlink:href="#path-ykr79j9cvq-1"></use>
+			</mask>
+			<rect stroke="#2B2B2B" x="24.5" y="39.5" width="21" height="81" rx="8"></rect>
+			<rect id="Rectangle" fill="#F8FF6E" mask="url(#mask-ykr79j9cvq-2)" x="25" y="70" width="20" height="50"></rect>
+		</g>
+	</g>
+</svg>
