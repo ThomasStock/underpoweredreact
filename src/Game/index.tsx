@@ -1,21 +1,30 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useMapResize } from "./useMapResize";
 import { useGameStore } from "./store";
 import { Boat } from "./Boat";
 import { Tug } from "./Tug";
+import { useLoop } from "./useLoop";
+import { FPS } from "./FPS";
 
 export const Game = () => {
   const canvas = useRef<HTMLCanvasElement>(null);
   const { scaledMap, pixelRatio } = useGameStore();
 
+  const { initializeLoop } = useLoop();
+
+  useEffect(() => {
+    const stopLoop = initializeLoop();
+    return stopLoop;
+  }, []);
+
   const { boxRef } = useMapResize();
 
   return (
-    <div className="w-screen h-screen bg-yellow-300" ref={boxRef}>
+    <div className="h-screen w-screen bg-yellow-300" ref={boxRef}>
       {scaledMap && (
         <>
           <div
-            className="m-auto absolute inset-0 outline-green-600 z-10 outline-2 outline"
+            className="absolute inset-0 z-10 m-auto outline outline-2 outline-green-600"
             style={{ width: scaledMap.width, height: scaledMap.height }}
           >
             <Boat />
@@ -23,11 +32,12 @@ export const Game = () => {
           </div>
           <canvas
             ref={canvas}
-            className="m-auto absolute inset-0 bg-blue-300"
+            className="absolute inset-0 m-auto bg-blue-300"
             width={scaledMap.width * pixelRatio}
             height={scaledMap.height * pixelRatio}
             style={{ width: scaledMap.width, height: scaledMap.height }}
           />
+          <FPS />
         </>
       )}
     </div>
