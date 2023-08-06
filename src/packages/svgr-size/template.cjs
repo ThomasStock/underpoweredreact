@@ -6,11 +6,9 @@ const propTypesTemplate = (
   function getSvgAttribute(key) {
     const svgAttributes = jsx["openingElement"]?.["attributes"];
     if (!svgAttributes) return;
-    console.log({ jsx, svgAttributes });
     const attribute = svgAttributes.find(
       (attr) => attr["name"]?.["name"] === key,
     );
-    console.log({ attribute: attribute });
     return attribute["value"]?.["expression"]?.["value"];
   }
 
@@ -23,11 +21,11 @@ const propTypesTemplate = (
   function ${componentName}(${props}) {
     return ${jsx};
   }
-  
-  ${componentName}.width = ${width};
-  ${componentName}.height = ${height};
-  
+
   ${exports}
+
+  export const svgHeight = ${height};
+  export const svgWidth = ${width};
     `;
 };
 

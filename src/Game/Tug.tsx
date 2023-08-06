@@ -1,5 +1,5 @@
 import { useLayoutEffect, useState } from "react";
-import TugSvg from "../svg/Tug";
+import TugSvg, { svgHeight, svgWidth } from "../svg/Tug";
 import { useGameStore } from "./store";
 
 export const Tug = () => {
@@ -17,8 +17,8 @@ export const Tug = () => {
     // Place the tug bottom
     const top = scaledMap.height - height - padding;
 
-    const boatScale = height / TugSvg.height;
-    const width = boatScale * TugSvg.width;
+    const boatScale = height / svgHeight;
+    const width = boatScale * svgWidth;
     const left = scaledMap.width - width - padding;
 
     setStyle({ top, left, height });

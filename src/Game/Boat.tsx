@@ -1,5 +1,5 @@
 import { useLayoutEffect, useState } from "react";
-import BoatSvg from "../svg/Boat";
+import BoatSvg, { svgHeight, svgWidth } from "../svg/Boat";
 import { useGameStore } from "./store";
 
 export const Boat = () => {
@@ -17,8 +17,8 @@ export const Boat = () => {
     const top = scaledMap.height / 2 - boatHeight / 2;
 
     // Place the boat in the horizontal middle
-    const boatScale = boatHeight / BoatSvg.height;
-    const boatWidth = boatScale * BoatSvg.width;
+    const boatScale = boatHeight / svgHeight;
+    const boatWidth = boatScale * svgWidth;
     const left = scaledMap.width / 2 - boatWidth / 2;
 
     setStyle({ top, left, height: boatHeight });
